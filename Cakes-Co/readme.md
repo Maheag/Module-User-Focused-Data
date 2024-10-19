@@ -34,6 +34,7 @@ Make sure that all elements are visible and functional on both mobile and deskto
 
 When you're ready to start coding:
 
+
 ### Start with mobile
 
 - Write the HTML following the mobile design
