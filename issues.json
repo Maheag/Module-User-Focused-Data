@@ -1,1 +1,106 @@
-[]
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #f47c7c;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #f47c7c;
+}
+
+.cake-gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.cake-gallery img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+    transition: transform 0.3s;
+}
+
+.cake-gallery img:hover {
+    transform: scale(1.05);
+}
+
+button {
+    background-color: #f47c7c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d06b6b;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f47c7c;
+    color: white;
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    .cake-gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .cake-gallery img {
+        width: 30%;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 900px) {
+    main {
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    button {
+        padding: 15px 30px;
+    }
+}
